@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  --mat-toolbar-container-background-color:ghostwhite;
+  background-color: #e7e7e7;
+}
+
+.mat-typography h3{
+  margin: 0;
+}
+
+/* Estilo para el contenedor que envuelve el spinner */
+.spinner-overlay {
+  position: fixed;           /* Asegura que el spinner esté fijado en la pantalla */
+  top: 0;                    /* Alinea el contenedor al principio de la página */
+  left: 0;                   /* Alinea el contenedor al principio de la página */
+  width: 100vw;              /* Toma todo el ancho de la ventana */
+  height: 100vh;             /* Toma todo el alto de la ventana */
+  display: flex;             /* Utiliza Flexbox para alinear el contenido */
+  justify-content: center;   /* Centra el spinner horizontalmente */
+  align-items: center;       /* Centra el spinner verticalmente */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  z-index: 1000;             /* Asegura que el spinner esté encima de otros elementos */
+}
+
+/* Estilo para el mat-spinner (opcional) */
+mat-spinner {
+  width: 50px;               /* Tamaño del spinner (ajusta según tus necesidades) */
+  height: 50px;              /* Tamaño del spinner (ajusta según tus necesidades) */
+}
